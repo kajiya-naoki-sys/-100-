@@ -1,0 +1,16 @@
+import pandas as pd
+import re
+
+pattern = re.compile('\|(.+?)\s=\s*(.+)')
+
+link = '~/Desktop/python/自然言語処理100本ノック/第3章_正規表現/jawiki-country.json'
+df = pd.read_json(link, lines=True)
+uk = df[df['title'] == 'イギリス'].text.values
+ls = uk[0].split('\n')
+dec = {}
+for i in ls:
+    r = re.findall(pattern, i)
+    if r:
+        dec[r[0][0]] = r[0][1]
+for i in dec:
+    print(i + ':' + dec[i])
