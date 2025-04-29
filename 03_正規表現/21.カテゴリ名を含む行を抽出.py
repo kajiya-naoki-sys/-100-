@@ -5,7 +5,7 @@ import re
 #reライブラリで対象とする文字列を正規表現にする処理のためにはまずコンパイルする.コンパイルすることで、その文字列を正規表現として扱える.
 #引数には正規化したい文字列をいれる.
 pattern = re.compile('Category')
-url = '~/Desktop/python/自然言語処理100本ノック/第3章_正規表現/jawiki-country.json'
+url = '/workspace/03_正規表現/jawiki-country.json'
 df = pd.read_json(url, lines=True)
 uk = df[df['title'] == 'イギリス'].text.values
 ls = uk[0].split('\n')

@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-link = '~/Desktop/python/自然言語処理100本ノック/第3章_正規表現/jawiki-country.json'
+link = '/workspace/03_正規表現/jawiki-country.json'
 df = pd.read_json(link, lines=True)
 uk = df[df['title'] == 'イギリス']['text'].values
 r = uk[0]

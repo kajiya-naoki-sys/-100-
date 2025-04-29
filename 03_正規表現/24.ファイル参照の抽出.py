@@ -6,7 +6,7 @@ import re
 #()内を取り出すことができる.
 pattern = re.compile('File|ファイル:(.+)\|')
 file = re.compile('(.*?\..{3})')
-link = '~/Desktop/python/自然言語処理100本ノック/第3章_正規表現/jawiki-country.json'
+link = '/workspace/03_正規表現/jawiki-country.json'
 df = pd.read_json(link, lines=True)
 
 #https://note.nkmk.me/python-pandas-str-contains-match/#isin を参照
