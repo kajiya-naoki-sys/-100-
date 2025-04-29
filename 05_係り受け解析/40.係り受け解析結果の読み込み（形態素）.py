@@ -9,7 +9,7 @@ class Morph:
         self.pos = attr[0]
         self.pos1 = attr[1]
 
-link = '/Users/kajiyanaoki/Desktop/python/自然言語処理100本ノック/第5章_係り受け解析/ai.ja.txt.parsed'
+link = '/workspace/05_係り受け解析/ai.ja.txt.parsed'
 with open(link) as f:
     text = f.read().split('EOS\n')
 result = []
