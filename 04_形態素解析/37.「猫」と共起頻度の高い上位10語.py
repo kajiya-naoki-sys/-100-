@@ -2,7 +2,7 @@ import collections
 from matplotlib import pyplot as plt
 import japanize_matplotlib
 
-link = '/Users/kajiyanaoki/Desktop/python/自然言語処理100本ノック/第4章_形態素解析/neko.txt.mecab'
+link = '/workspace/04_形態素解析/neko.txt.mecab'
 with open(link) as f:
     text = f.read().split('\n')
 result = []

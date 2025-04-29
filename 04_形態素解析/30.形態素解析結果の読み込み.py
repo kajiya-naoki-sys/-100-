@@ -1,4 +1,4 @@
-path = '/Users/kajiyanaoki/Desktop/python/自然言語処理100本ノック/第4章_形態素解析/neko.txt.mecab'
+path = '/workspace/04_形態素解析/neko.txt.mecab'
 #!with文は、ある作業を始める前と終わった後に自動的に何かを行うための便利な機能.
 #?[with open() as [ファイルの変数名]]でファイルを開いた後自動的に閉じてくれる.
 with open(path) as f:
