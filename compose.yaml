@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    container_name: nlp_exercise
+    tty: true
+    stdin_open: true
+    volumes:
+      - ../NLP-100-Exercise:/workspace   # ← プロジェクト全体をマウント
+    working_dir: /workspace              # ← カレントディレクトリをここにする
+    # command: ["python", "./05_係り受け解析/sample.py"]  # ← これは毎回変えたいからコメントアウト
